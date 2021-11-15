@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:gray;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+header {
+  text-align: left;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color:rgb(144, 238, 222);
+  padding: 30px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  }
+  .btn {
+ color: black;
+ text-align: center;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<div class="header">
+<h1>MY RESUME</h1> 
+</div>
+<hr>
+<p>PROJECTS DONE BY ME.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/Screenshot (16).png" alt="Mountains" style="width:100%">
+      <h3>TEST YOUR BRAIN</h3>
+      <div class="btn">
+        <a href="https://online-exam-system-123.000webhostapp.com">
+          <button>Visit Page</button>
+       </a>
+      </div>
+    </div>
+</div>
+  <div class="column">
+    <div class="content">
+    <img src="images/Screenshot (20).png" alt="Nature" style="width:100%">
+      <h3>STUDENT ATTENDENCE</h3>
+      <div class="btn">
+      <a href="http://localhost/doctorphp/patient/patient.php">
+        <button>Visit Page</button>
+     </a>
+    </div>
+    </div>
+  </div>
+  </div>
+  <div class="content">
+    <img src="images/Screenshot (21).png" alt="Bear" style="width:100%" height="100%">
+    <h3>ONLINEQUIZ+++</h3>
+    <div class="btn">
+        <a href="http://localhost/QuizProject/">
+        <button>Visit Page</button>
+  </div>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
